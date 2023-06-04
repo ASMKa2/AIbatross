@@ -41,7 +41,7 @@ class Summarizer:
         if(rescode == 200):
             return response.json()['summary']
         else:
-            return "Error : " + response.text
+            return "Error"
 
 if __name__ == "__main__":
     clova = Summarizer()
